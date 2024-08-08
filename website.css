@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'arial';
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%) ,url(wallhaven-6dq1w6.jpg);
+    background-position:center;
+    background-size: cover;
+    height: 109vh;   
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.336);
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+    flex: 1;
+}
+
+.logo{
+    font-size: 35px;
+    color: rgb(238, 255, 87);
+    float: left;
+    padding-left: 60px;
+    padding-top: 15px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+    flex: 9;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+
+ul li a:hover{
+    color: rgb(23, 172, 23);
+    font-size: larger;
+}
+
+
+
+.content p{
+    padding-left: 20px;
+    padding-top: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 6%;
+    letter-spacing: 2px;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
