@@ -1,18 +1,27 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Maverick</title>
-		<link rel="stylesheet" href="website.css">
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
  	</head>
 	<body>
 	<div class="main">
+		<div class="juk">
+			<button onclick="history.back()" class="nav-btn"><i class="fas fa-chevron-left">~</i></button>
+			<button onclick="history.forward()" class="nav-btn">~<i class="fas fa-chevron-right"></i></button>
+		</div>
 		<div class="navbar">
 			<div class="icon">
-				<h2 class="logo">Maverick</h2>
-			</div>
+				<img src="logo.png" alt="Maverick Logo" class="logo-img">
+				<h2 class="logo-text">Maverick</h2>
+			  </div>
 			<div class="menu">
 				<ul>
-					<li><a href="9">HOME</a></li>
-					<li><a href="9">ABOUT</a></li>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
 					<li><a href="9">SERVICE</a></li>
 					<li><a href="9">DESIGN</a></li>
 					<li><a href="9">CONTACT</a></li>
@@ -22,7 +31,8 @@
 		<div class="content">
 			<h1>Maverick<br><span>Ethiopia</span><br>Tutorials</h1>
 			<p>This website is created for students espacially for high school students, containing <br> video tutorials for the specific purpose. <br>Also encompasses alternative ways to motivate and create awareness without <br>hindering students class participation. </p>
-    </div>
+			<a href="home.html"><button>Enroll</button></a>
+		</div>
   </div>
   </body>
 </html>
