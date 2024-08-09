@@ -1,134 +1,181 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'arial';
+  margin: 0;
+  padding: 0;
+  font-family: 'arial';
 }
 
 .main{
-    width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%) ,url(wallhaven-6dq1w6.jpg);
-    background-position:center;
-    background-size: cover;
-    height: 109vh;   
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%) ,url(wallhaven-6dq1w6.jpg);
+  background-position:center;
+  background-size: cover;
+  height: 109vh;   
 }
 
 .navbar{
-    width: 100%;
-    margin: auto;
-    height: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.336);
+  width: 100%;
+  margin: auto;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.336);
+  margin-left: auto; /* Push menu to the right */
+  margin-right: 20px; 
 }
 
-.icon{
-    width: 200px;
-    float: left;
-    height: 70px;
-    flex: 1;
+.icon {
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
 }
 
-.logo{
-    font-size: 35px;
-    color: rgb(238, 255, 87);
-    float: left;
-    padding-left: 60px;
-    padding-top: 15px;
+.logo-img {
+  height: 60px;
+  width: auto;
+  animation: bounce 3s ease-in-out; /* Apply a looping bounce animation */
 }
+
+/* Keyframes for bouncing loop animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at the original position */
+  }
+  50% {
+    transform: translateY(-15px); /* Move up by 15px at the middle of the animation */
+  }
+}
+
+.logo-text {
+  font-size: 35px;
+  color: rgb(238, 255, 87);
+  margin-left: 10px;
+}
+.juk {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.nav-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-btn:hover {
+  color: rgb(23, 172, 23);
+}
+
 
 .menu{
-    width: 400px;
-    float: left;
-    height: 70px;
-    flex: 9;
+  width: 400px;
+  float: left;
+  height: 70px;
+  flex: 9;
 }
 
 ul{
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  float: left;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
 }
 
 ul li{
-    list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 14px;
-    justify-content: center;
-    align-items: center;
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
 }
 
 
 
 ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-family: Arial;
-    font-weight: bold;
-    transition: 0.5s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.9s ease-in-out;
 }
 
 ul li a:hover{
-    color: rgb(23, 172, 23);
-    font-size: larger;
+  color: rgb(23, 172, 23);
+  font-size: larger;
 }
 
 
 
 .content p{
-    padding-left: 20px;
-    padding-top: 25px;
-    font-family: Arial;
-    letter-spacing: 1.2px;
-    line-height: 30px;
+  padding-left: 20px;
+  padding-top: 25px;
+  font-family: Arial;
+  letter-spacing: 1.2px;
+  line-height: 30px;
 }
 
 .content h1{
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 6%;
-    letter-spacing: 2px;
+  font-size: 50px;
+  padding-left: 20px;
+  margin-top: 6%;
+  letter-spacing: 2px;
 }
 
-.content{
-    height: auto;
-    margin: auto;
-    color: #fff;
-    position: relative;
+.content {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  color: #fff;
+  position: relative;
+  opacity: 0; /* Start with hidden content */
+  animation: fadeInContent 2s ease-in forwards; /* Apply the fade-in animation */
 }
 
-@media (max-width:768px){
-    .navbar{
+/* Keyframes for fade-in animation */
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+    .navbar {
         text-align: center;
     }
 
-    .menu{
+    .menu {
         float: none;
     }
 
-    .menu ul li{
+    .menu ul li {
         display: block;
         margin: 10px 0;
     }
 
-    .content h1{
+    .content h1 {
         font-size: 28px;
     }
 
-    .content p{
+    .content p {
         font-size: 16px;
     }
 }
 
-
 @media (max-width: 480px) {
-    .content h1{
+    .content h1 {
         font-size: 24px;
     }
 
-    .content p{
+    .content p {
         font-size: 14px;
     }
 }
