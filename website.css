@@ -147,7 +147,7 @@ ul li a:hover{
     opacity: 1;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 768px) {
     .navbar {
         text-align: center;
     }
@@ -158,8 +158,7 @@ ul li a:hover{
 
     .menu ul li {
         display: block;
-        margin: 5px 0;
-      font-size: 10px;
+        margin: 10px 0;
     }
 
     .content h1 {
@@ -171,7 +170,7 @@ ul li a:hover{
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
     .content h1 {
         font-size: 24px;
     }
@@ -179,4 +178,179 @@ ul li a:hover{
     .content p {
         font-size: 14px;
     }
+}
+ .Grades {
+width: 110%;
+height: 70vh;
+float:left;
+background-color: rgba(0, 0, 0, 0.3);;
+
+display: flex;
+}
+#graden {
+  position: relative;
+  width: 35%;
+  height: 80%;
+  background-color: hsla(120, 88%, 47%, 0.842);
+  margin: 5%;
+  transition: 0.9s ease-in-out;
+  border-radius: 5%;
+  
+  
+}
+
+#graden:hover{
+background-color: hsla(120, 83%, 65%, 0.842);
+width: 45%;
+height: 85%;
+margin-right: 0%;
+}
+#gradet {
+  position: relative;
+  width: 35%;
+  height: 80%;
+  background-color: hsla(59, 100%, 52%, 0.842);
+  margin: 5%;
+  transition: 0.9s ease-in-out;
+  border-radius: 5%;
+}
+
+#gradet:hover{
+background-color: hsla(59, 100%, 52%,0.842);
+width: 39%;
+height: 85%;
+margin-right:0 ;
+}#gradee {
+  position: relative;
+  width: 35%;
+  height: 80%;
+  background-color: hsla(359, 92%, 33%, 0.842);
+  margin: 5%;
+  transition: 0.9s ease-in-out;
+  border-radius: 5%;
+}
+
+#gradee:hover{
+background-color: hsla(359, 87%, 50%, 0.842);
+width: 39%;
+height: 85%;
+margin-right:0 ;
+}#gradetw {
+  position: relative;
+  width: 35%;
+  height: 80%;
+  background-color: hsla(207, 89%, 45%, 0.842);
+  margin: 5%;
+  transition: 0.9s ease-in-out;
+  border-radius: 5%;
+  
+}
+
+#gradetw:hover{
+background-color: rgb(52, 135, 224);
+width: 39%;
+height: 85%;
+margin-right:0;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -450%);
+  color: white;
+  font-size: 27px;
+  text-align: center;
+  background-color: rgb(48, 62, 163);
+  width: 99%;
+  height: 10%;
+  border-radius: 5px;
+}
+.image-slider {
+  position: relative;
+  width: 100%; /* Adjust to your needs */
+  height: 70%; /* Adjust to your needs */
+  overflow: hidden;
+}
+
+.image-slider img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: fadeInOut 9s infinite;
+ transform: translate(-50%,10%);
+}
+
+.image-slider img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.image-slider img:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.image-slider img:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.enroll {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.kiy {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.kiy:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.kiy:active {
+  background-color: #004094;
+  transform: scale(0.95);
+}.kiy:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.kiy:active {
+  background-color: #004094;
+  transform: scale(0.95);
 }
