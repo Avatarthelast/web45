@@ -354,3 +354,48 @@ margin-right:0;
   background-color: #004094;
   transform: scale(0.95);
 }
+@media (max-width: 1024px) {
+  .content h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .menu ul li {
+    margin: 10px 0;
+  }
+
+  .content h1 {
+    font-size: 28px;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 24px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .kiy {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
