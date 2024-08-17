@@ -368,7 +368,7 @@ margin-right:0;
   }
 
   .menu ul {
-    flex-direction: column;
+    flex-direction: none;
     margin: 0;
   }
 
